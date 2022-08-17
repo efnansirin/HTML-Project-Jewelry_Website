@@ -1,0 +1,54 @@
+<!DOCTYPE html> <!-- Doctype:Dosyamızın türünü belirtir.Bizimki html. -->
+<html>
+
+<head>
+    <!-- head:Sayfa başlığı, meta etiketi,siha çalışması(siha çalışmaları yapılırken meta etiketleri kullanılır) yaparken kullanıyoruz.Klasörden dosya çekerken uzantılarını vs buraya yazarak çekiyoruz.Mesela index.css ve index.html dosyamızı ilişkilendirme işlemini burdan yapıcaz. -->
+
+    <title>The Butterfly Project</title>
+    <!-- title:Başlık kısmı.Yeni bir sekmede bir web sitesi açıldığı zaman üst kısımda yazan ismi değiştirmek istiyorsak bu kısmın içine yazıyoruz. -->
+    <link rel="stylesheet" type="text/css" href="css/index.css"> <!-- link eklemek için bu işlemi yapıyoruz-->
+    <link rel="stylesheet" type="text/css" href="js/slider.js">
+
+
+</head>
+
+<body>
+    <!-- body:Web sitemizin genel görünüm kısmını bu etiketin içine yazarak ayarlıyoruz. -->
+
+    <div id="menu">
+        <!-- css içinde özelliklerini belirlediğimiz menü divini çağırıyoru. -->
+        <div id="logo"></div>
+        <div id="menukategori">
+            <div id="menuyazi"><a href="#"> ANASAYFA </a></div>
+            <!-- a href içine # koyduk bu işlem Anasayfa ve Menü link haline gelmiş oluyor.-->
+            <div id="menuyazi"><a href="#"> ÜRÜNLER </a></div>
+        </div>
+    </div>
+
+    <div id="banner"></div> <br>
+    <!--section ataması yapıyoruz ve sayfaya baktığımız zaman hafifçe ürünlerin bir kısmına kadar bizi atıyor yani ürünle yazısı bile gözükmüyor.Bu yüzden aşağıdaki satıta taşıdık yani bannerdan sonraki kısıma-->
+    <div id="iconlar">
+        <center> <img src="images/urunler.png"></center> <!-- center ortalamaya yarar -->
+
+        <a href="bileklik.html" target="sayfalar">
+            <div id="iconresmi"></div>
+        </a>
+        <!--a href ile link verdik daha sonra bileklik ikonuna basıldığında bileklik sayfası açılacak aşağıya gelmeyecekti. Aşağıya gelesini istediğimiz için target tanımladık. -->
+        <a href="kupe.html" target="sayfalar">
+            <div id="iconresmi1"></div>
+        </a>
+        <a href="kolye.html" target="sayfalar">
+            <div id="iconresmi2"></div>
+        </a>
+        <a href="yuzuk.html" target="sayfalar">
+            <div id="iconresmi3"></div>
+        </a>
+    </div>
+
+    <IFRAME name="sayfalar" src="bileklik.html" width="1200" height="850" scrolling="yes" frameborder="0"
+        style="position:absolute; margin-top:940px; margin-left:100px;"></IFRAME>
+
+
+</body>
+
+</html>
